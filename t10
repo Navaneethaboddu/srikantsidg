@@ -1,0 +1,36 @@
+
+//Java Program to demonstrate the use of continue statement  
+//inside the Java do-while loop.  
+public class ContinueDoWhileExample {  
+public static void main(String[] args) {  
+    //declaring variable  
+    int i=1;  
+    //do-while loop  
+    do{  
+        if(i==5){  
+                //using continue statement  
+                 i++;  
+            continue;//it will skip the rest statement  
+        }  
+        System.out.println(i);  
+        i++;  
+    }while(i<=10);  
+}  
+}  
+[200~//Java Program to illustrate the use of continue statement  
+//with label inside an inner loop to continue outer loop  
+public class ContinueExample3 {  
+public static void main(String[] args) {  
+            aa:  
+	                for(int i=1;i<=3;i++){    
+			                    bb:  
+					                        for(int j=1;j<=3;j++){    
+								                        if(i==2&&j==2){    
+											                            //using continue statement with label  
+														                                continue aa;    
+																		                        }    
+																					                        System.out.println(i+" "+j);    
+																								                    }    
+																										                }    
+																												}  
+																											
